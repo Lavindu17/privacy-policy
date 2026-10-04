@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – Meta Learning Sri Lanka</title>
+  <meta name="description"
+    content="Privacy Policy for Meta Learning Sri Lanka. Learn how we collect, use, and protect your personal information submitted through our Facebook Instant Form." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg-primary: #0a0e1a;
+      --accent: #4f8ef7;
+      --accent-glow: rgba(79, 142, 247, 0.25);
+      --text-primary: #f0f4ff;
+      --text-secondary: #94a3b8;
+      --text-muted: #64748b;
+      --card-bg: rgba(255, 255, 255, 0.04);
+      --card-border: rgba(255, 255, 255, 0.08);
+      --divider: rgba(255, 255, 255, 0.06);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.7;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background:
+        radial-gradient(ellipse at 20% 20%, rgba(79, 142, 247, 0.07) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 80%, rgba(124, 58, 237, 0.07) 0%, transparent 50%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .wrapper {
+      position: relative;
+      z-index: 1;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 60px 24px 80px;
+    }
+
+    /* Header */
+    .header {
+      text-align: center;
+      margin-bottom: 56px;
+      animation: fadeSlideDown 0.7s ease both;
+    }
+
+    .brand-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 999px;
+      padding: 6px 18px;
+      font-size: 0.78rem;
+      font-weight: 500;
+      color: var(--accent);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+      backdrop-filter: blur(12px);
+    }
+
+    .brand-badge::before {
+      content: '';
+      display: block;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 8px var(--accent);
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    h1.page-title {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      background: linear-gradient(135deg, #f0f4ff 0%, #94a3b8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 14px;
+    }
+
+    .effective-date {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      letter-spacing: 0.03em;
+    }
+
+    /* Intro */
+    .intro-card {
+      background: linear-gradient(135deg, rgba(79, 142, 247, 0.1), rgba(124, 58, 237, 0.08));
+      border: 1px solid rgba(79, 142, 247, 0.2);
+      border-radius: 16px;
+      padding: 28px 32px;
+      margin-bottom: 48px;
+      font-size: 0.97rem;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      animation: fadeSlideDown 0.7s 0.1s ease both;
+    }
+
+    .intro-card strong {
+      color: var(--text-primary);
+    }
+
+    /* Section cards */
+    .section {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 32px;
+      margin-bottom: 20px;
+      backdrop-filter: blur(8px);
+      transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+      animation: fadeSlideUp 0.6s ease both;
+    }
+
+    .section:hover {
+      border-color: rgba(79, 142, 247, 0.3);
+      box-shadow: 0 8px 40px rgba(79, 142, 247, 0.08);
+      transform: translateY(-2px);
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 18px;
+    }
+
+    .section-num {
+      flex-shrink: 0;
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, rgba(79, 142, 247, 0.2), rgba(124, 58, 237, 0.2));
+      border: 1px solid rgba(79, 142, 247, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    h2.section-title {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      letter-spacing: -0.01em;
+    }
+
+    .section p,
+    .section li {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      line-height: 1.75;
+    }
+
+    .section ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .section ul li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .section ul li::before {
+      content: '';
+      flex-shrink: 0;
+      margin-top: 9px;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 6px var(--accent-glow);
+    }
+
+    .section p+p {
+      margin-top: 12px;
+    }
+
+    .sub-label {
+      color: var(--text-primary);
+      font-weight: 500;
+    }
+
+    /* Rights */
+    .rights-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .right-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 10px;
+      padding: 12px 16px;
+      border: 1px solid var(--divider);
+      transition: background 0.2s;
+    }
+
+    .right-item:hover {
+      background: rgba(79, 142, 247, 0.05);
+    }
+
+    .right-icon {
+      flex-shrink: 0;
+      font-size: 1.1rem;
+    }
+
+    .right-text {
+      font-size: 0.92rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* Contact */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .contact-item {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 16px 20px;
+      transition: border-color 0.25s, background 0.25s;
+    }
+
+    .contact-item:hover {
+      border-color: rgba(79, 142, 247, 0.35);
+      background: rgba(79, 142, 247, 0.05);
+    }
+
+    .contact-label {
+      font-size: 0.72rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      margin-bottom: 6px;
+    }
+
+    .contact-value {
+      font-size: 0.9rem;
+      color: var(--text-primary);
+      font-weight: 500;
+      word-break: break-word;
+    }
+
+    .contact-value a {
+      color: var(--accent);
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+
+    .contact-value a:hover {
+      opacity: 0.8;
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      margin-top: 56px;
+      padding-top: 32px;
+      border-top: 1px solid var(--divider);
+      animation: fadeSlideUp 0.6s 0.3s ease both;
+    }
+
+    .footer p {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    .footer strong {
+      color: var(--text-secondary);
+    }
+
+    /* Animation delays */
+    .section:nth-child(1) {
+      animation-delay: 0.15s;
+    }
+
+    .section:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .section:nth-child(3) {
+      animation-delay: 0.25s;
+    }
+
+    .section:nth-child(4) {
+      animation-delay: 0.3s;
+    }
+
+    .section:nth-child(5) {
+      animation-delay: 0.35s;
+    }
+
+    .section:nth-child(6) {
+      animation-delay: 0.4s;
+    }
+
+    .section:nth-child(7) {
+      animation-delay: 0.45s;
+    }
+
+    @keyframes fadeSlideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-18px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeSlideUp {
+      from {
+        opacity: 0;
+        transform: translateY(18px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.4;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .wrapper {
+        padding: 40px 16px 60px;
+      }
+
+      .section {
+        padding: 24px 20px;
+      }
+
+      .intro-card {
+        padding: 22px 20px;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="brand-badge">Meta Learning Sri Lanka</div>
+      <h1 class="page-title">Privacy Policy</h1>
+      <p class="effective-date">Effective Date: October 4, 2026</p>
+    </header>
+
+    <div class="intro-card">
+      This Privacy Policy describes how <strong>Meta Learning Sri Lanka</strong> ("we") collects, uses, and protects
+      your personal information when you submit your details through our <strong>Facebook Instant Form</strong>.
+    </div>
+
+    <div id="sections">
+
+      <div class="section" id="section-1">
+        <div class="section-header">
+          <div class="section-num">1</div>
+          <h2 class="section-title">Information We Collect</h2>
+        </div>
+        <p>When you interact with our Facebook Instant Form, we collect the following personal information that you
+          voluntarily provide:</p>
+        <ul>
+          <li>Full Name</li>
+          <li>Contact Number (Phone Number)</li>
+        </ul>
+      </div>
+
+      <div class="section" id="section-2">
+        <div class="section-header">
+          <div class="section-num">2</div>
+          <h2 class="section-title">How We Use Your Information</h2>
+        </div>
+        <p>We use the information collected from you for the following purposes:</p>
+        <ul>
+          <li>To contact you regarding our products, services, offers, or inquiries you submitted.</li>
+          <li>To provide customer support and follow up on your requests.</li>
+          <li>To improve our marketing efforts and customer communication.</li>
+        </ul>
+      </div>
+
+      <div class="section" id="section-3">
+        <div class="section-header">
+          <div class="section-num">3</div>
+          <h2 class="section-title">Data Sharing and Disclosure</h2>
+        </div>
+        <p>We respect your privacy and do not sell, rent, or trade your personal information to third parties. We may
+          share your data only with:</p>
+        <ul>
+          <li><span class="sub-label">Service Providers:</span>&nbsp;Trusted third-party tools or CRM platforms (such as
+            Meta, Google Sheets, or email marketing software) used strictly to manage and process your leads on our
+            behalf.</li>
+          <li><span class="sub-label">Legal Requirements:</span>&nbsp;When required by law, regulation, or legal process
+            to protect our rights, safety, or property.</li>
+        </ul>
+      </div>
+
+      <div class="section" id="section-4">
+        <div class="section-header">
+          <div class="section-num">4</div>
+          <h2 class="section-title">Data Security</h2>
+        </div>
+        <p>We implement reasonable administrative, technical, and physical security measures to protect your personal
+          information from unauthorized access, loss, misuse, or alteration.</p>
+        <p>However, no method of transmission over the internet is 100% secure.</p>
+      </div>
+
+      <div class="section" id="section-5">
+        <div class="section-header">
+          <div class="section-num">5</div>
+          <h2 class="section-title">Your Rights and Choices</h2>
+        </div>
+        <p>You have the right to:</p>
+        <div class="rights-list">
+          <div class="right-item">
+            <span class="right-icon">📋</span>
+            <span class="right-text">Access, update, or request the deletion of the personal information we hold about
+              you.</span>
+          </div>
+          <div class="right-item">
+            <span class="right-icon">🔕</span>
+            <span class="right-text">Opt-out of future communications at any time by replying <strong>"STOP"</strong> to
+              our messages or contacting us directly.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" id="section-6">
+        <div class="section-header">
+          <div class="section-num">6</div>
+          <h2 class="section-title">Changes to This Privacy Policy</h2>
+        </div>
+        <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated
+          effective date.</p>
+      </div>
+
+      <div class="section" id="section-7">
+        <div class="section-header">
+          <div class="section-num">7</div>
+          <h2 class="section-title">Contact Us</h2>
+        </div>
+        <p>If you have any questions or concerns about this Privacy Policy or how your data is handled, please reach out
+          to us:</p>
+        <div class="contact-grid">
+          <div class="contact-item">
+            <div class="contact-label">Business</div>
+            <div class="contact-value">Meta Learning Sri Lanka</div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-label">Email</div>
+            <div class="contact-value">
+              <a href="mailto:metalearningsrilanka@gmail.com">metalearningsrilanka@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-label">Phone (WhatsApp)</div>
+            <div class="contact-value">
+              <a href="https://wa.me/94772731902" target="_blank" rel="noopener">0772731902</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <footer class="footer">
+      <p>&copy; 2026 <strong>Meta Learning Sri Lanka</strong>. All rights reserved.</p>
+      <p style="margin-top:6px;">This page is intended for informational purposes only.</p>
+    </footer>
+
+  </div>
+</body>
+
+</html>
